@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiden Media | Digital Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              shiden: {
+                dark: '#050505', // Deeper Black
+                card: '#0f172a', 
+                accent: '#0055FF', // Stronger Electric Blue
+                light: '#ffffff',
+                // Multicolour Palette for Services
+                brand1: '#FF3B30', // Red/Orange
+                brand2: '#FF9500', // Orange/Yellow
+                brand3: '#AF52DE', // Purple
+                brand4: '#00C7BE', // Teal
+                brand5: '#34C759', // Green
+                brand6: '#5856D6', // Indigo
+              }
+            },
+            animation: {
+              scroll: "scroll 40s linear infinite",
+            },
+            keyframes: {
+              scroll: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(calc(-50%))" },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 5px;
+        border: 2px solid #050505;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0055FF; 
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Smooth text rendering */
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.31.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "clsx": "https://esm.sh/clsx@^2.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
