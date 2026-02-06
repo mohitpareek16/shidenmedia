@@ -59,7 +59,6 @@ function App() {
             <Hero onViewChange={setView} />
             <AboutStats />
             <Services />
-            <Partners />
             <Founders />
             <FounderJourney />
             <Articles />

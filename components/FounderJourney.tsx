@@ -105,7 +105,7 @@ export const FounderJourney: React.FC = () => {
                                 className={`flex flex-col md:flex-row items-center gap-12 relative ${milestone.align === 'right' ? 'md:flex-row-reverse' : ''}`}
                             >
                                 {/* Center Dot - Desktop */}
-                                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-black border-2 border-shiden-accent rounded-full z-20 shadow-[0_0_10px_#0055FF]"></div>
+                                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-black border-2 border-shiden-accent rounded-full z-20 shadow-[0_0_10px_#00629D]"></div>
 
                                 {/* Content Side */}
                                 <div className={`w-full md:w-1/2 ${milestone.align === 'left' ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} text-center md:text-inherit`}>
