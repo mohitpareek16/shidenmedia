@@ -17,7 +17,7 @@ const MILESTONES = [
         title: "Shouldering Responsibility",
         description: "At 12, I lost my father. In the face of tragedy, I made a promise to myself: I would restore the lifestyle my grandfather built. I didn't know how, but I knew I had to become economically strong to support my mother and brother.",
         icon: Heart,
-        image: "https://images.unsplash.com/photo-1518536647178-0870d03c4cb3?auto=format&fit=crop&q=80&w=800",
+        image: "https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         align: "right"
     },
     {
@@ -25,7 +25,7 @@ const MILESTONES = [
         title: "Crisis into Opportunity",
         description: "While pursuing CA, Covid hit. Exams were cancelled, and my mother's salon business paused. Instead of waiting, I started a Cloud Kitchen from home selling sandwiches. It was survival mode.",
         icon: Utensils,
-        image: "https://images.unsplash.com/photo-1509722747741-0903d963c989?auto=format&fit=crop&q=80&w=800",
+        image: "https://images.unsplash.com/photo-1590232918080-66313d51bd9f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         align: "left"
     },
     {
@@ -67,7 +67,7 @@ export const FounderJourney: React.FC = () => {
         <section ref={containerRef} className="py-32 bg-shiden-dark relative overflow-hidden">
             {/* Background Texture */}
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 pointer-events-none"></div>
-            
+
             <Container className="relative z-10">
                 <div className="text-center mb-24 max-w-4xl mx-auto">
                     <motion.div
@@ -75,11 +75,11 @@ export const FounderJourney: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                         <h2 className="text-6xl md:text-8xl font-display font-bold text-white mb-6 tracking-tighter">
+                        <h2 className="text-6xl md:text-8xl font-display font-bold text-white mb-6 tracking-tighter">
                             THE <span className="text-shiden-accent">ORIGIN.</span>
                         </h2>
                         <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed">
-                            "If you take your work as worship, you will get your result as Prasad." <br/>
+                            "If you take your work as worship, you will get your result as Prasad." <br />
                             <span className="text-sm mt-4 block opacity-50 uppercase tracking-widest">- Devendra Purohit</span>
                         </p>
                     </motion.div>
@@ -88,15 +88,15 @@ export const FounderJourney: React.FC = () => {
                 <div className="relative max-w-6xl mx-auto">
                     {/* Central Line - Only on desktop */}
                     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2 h-full">
-                        <motion.div 
-                            style={{ height: lineHeight }} 
+                        <motion.div
+                            style={{ height: lineHeight }}
                             className="w-full bg-gradient-to-b from-shiden-accent via-white to-shiden-accent shadow-[0_0_15px_rgba(0,85,255,0.5)]"
                         />
                     </div>
 
                     <div className="flex flex-col gap-24 pb-20">
                         {MILESTONES.map((milestone, index) => (
-                            <motion.div 
+                            <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -118,15 +118,15 @@ export const FounderJourney: React.FC = () => {
                                         {milestone.description}
                                     </p>
                                 </div>
-                                
+
                                 {/* Image Side */}
                                 <div className={`w-full md:w-1/2 ${milestone.align === 'left' ? 'md:pl-16' : 'md:pr-16'}`}>
                                     <div className="relative aspect-video rounded-lg overflow-hidden border border-white/10 group">
                                         <div className="absolute inset-0 bg-shiden-accent/20 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
-                                        <img 
-                                            src={milestone.image} 
-                                            alt={milestone.title} 
-                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110" 
+                                        <img
+                                            src={milestone.image}
+                                            alt={milestone.title}
+                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
                                         />
                                     </div>
                                 </div>
